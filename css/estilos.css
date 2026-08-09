@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+    display: block;
+}
+main {
+    padding: 40px;
+}
+
+.inicio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+.columna {
+    text-align: center;
+}
+
+.columna img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.columna {
+    text-align: center;
+    padding: 20px;
+}
+
+.columna h1 {
+    margin-bottom: 20px;
+}
+
+.columna p {
+    line-height: 1.6;
+}
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px;
+    margin-top: 40px;
+    background-color: #333;
+    color: white;
+}
+
+.footer-columna {
+    text-align: center;
+}
+
+.footer-columna h3 {
+    margin-bottom: 10px;
+}
+
+.footer-columna p {
+    margin-bottom: 8px;
+}
+
+.footer-columna a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+}
+nav a {
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+@media (min-width: 1024px) {
+
+    .inicio {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .inicio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .productos {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 767px) {
+
+    .inicio {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+    .productos {
+    grid-template-columns: 1fr;
+    }
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        margin: 5px;
+    }
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+}
+
+.producto {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.producto h2 {
+    margin-bottom: 15px;
+}
+
+.producto img {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.producto p {
+    line-height: 1.5;
+}
+
+.producto .precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
